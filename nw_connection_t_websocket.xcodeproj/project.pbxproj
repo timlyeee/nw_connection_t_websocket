@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FE7384D27E304880018B7FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7384C27E304880018B7FE /* main.cpp */; };
+		0FE7385527E331750018B7FE /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7385427E331750018B7FE /* Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0FE7384927E304880018B7FE /* nw_connection_t_websocket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nw_connection_t_websocket; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE7384C27E304880018B7FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0FE7385427E331750018B7FE /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE7385527E331750018B7FE /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				0FE7384B27E304880018B7FE /* nw_connection_t_websocket */,
 				0FE7384A27E304880018B7FE /* Products */,
+				0FE7385327E331750018B7FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				0FE7384C27E304880018B7FE /* main.cpp */,
 			);
 			path = nw_connection_t_websocket;
+			sourceTree = "<group>";
+		};
+		0FE7385327E331750018B7FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE7385427E331750018B7FE /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +109,7 @@
 				};
 			};
 			buildConfigurationList = 0FE7384427E304880018B7FE /* Build configuration list for PBXProject "nw_connection_t_websocket" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -243,6 +255,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GQQKF98H;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +266,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GQQKF98H;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
