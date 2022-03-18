@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FE7384D27E304880018B7FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7384C27E304880018B7FE /* main.cpp */; };
 		0FE7385527E331750018B7FE /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7385427E331750018B7FE /* Network.framework */; };
+		0FE7385927E462980018B7FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7385827E462980018B7FE /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		0FE7384927E304880018B7FE /* nw_connection_t_websocket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nw_connection_t_websocket; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE7384C27E304880018B7FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0FE7385427E331750018B7FE /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		0FE7385727E4322D0018B7FE /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		0FE7385827E462980018B7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE7385927E462980018B7FE /* Security.framework in Frameworks */,
 				0FE7385527E331750018B7FE /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +48,7 @@
 		0FE7384027E304880018B7FE = {
 			isa = PBXGroup;
 			children = (
+				0FE7385727E4322D0018B7FE /* LICENSE.txt */,
 				0FE7384B27E304880018B7FE /* nw_connection_t_websocket */,
 				0FE7384A27E304880018B7FE /* Products */,
 				0FE7385327E331750018B7FE /* Frameworks */,
@@ -69,6 +74,7 @@
 		0FE7385327E331750018B7FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FE7385827E462980018B7FE /* Security.framework */,
 				0FE7385427E331750018B7FE /* Network.framework */,
 			);
 			name = Frameworks;
